@@ -23,7 +23,9 @@ export default function Header() {
         }}
       >
         <Link href="/" passHref>
-          <Typography>NEWS NOW</Typography>
+          <Typography variant="h5" component="h1" sx={{ fontSize: "24px" }}>
+            NEWS NOW
+          </Typography>
         </Link>
       </Toolbar>
     </AppBar>

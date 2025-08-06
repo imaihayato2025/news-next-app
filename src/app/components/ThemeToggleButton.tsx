@@ -14,7 +14,17 @@ export default function ThemeToggleButton({ sx }: Props) {
   const { toggleColorMode, mode } = useThemeMode();
 
   return (
-    <IconButton onClick={toggleColorMode} sx={{ ...sx }}>
+    <IconButton
+      onClick={toggleColorMode}
+      sx={{
+        width: "30px",
+        height: "30px",
+        position: "fixed",
+        top: 21,
+        right: 15,
+        zIndex: 1,
+      }}
+    >
       {mode === "light" ? <BedtimeIcon /> : <LightModeIcon />}
     </IconButton>
   );

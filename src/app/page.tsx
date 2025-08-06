@@ -7,15 +7,9 @@ export default function App() {
   return (
     <ThemeToggleProvider>
       <div className="flex h-screen flex-col items-center justify-center">
-        <ThemeToggleButton
-          sx={{
-            position: "fixed",
-            top: 5,
-            right: 5,
-          }}
-        />
+        <ThemeToggleButton />
         <h1 className="text-4xl font-bold">NEWS NOW</h1>
-        <Link href="/">
+        <Link href="/NewsList">
           <Button
             variant="contained"
             sx={{
